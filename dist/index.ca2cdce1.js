@@ -717,6 +717,7 @@ parcelHelpers.defineInteropFlag(exports);
 parcelHelpers.export(exports, "getClientAccountsElement", ()=>getClientAccountsElement
 );
 var _styleBusiness = require("./style-business");
+var _styleBusinessDefault = parcelHelpers.interopDefault(_styleBusiness);
 function getClientAccountsElement(accounts) {
     const ul = document.createElement("ul");
     for (let account of accounts)ul.append(getAccountElement(account));
@@ -724,7 +725,7 @@ function getClientAccountsElement(accounts) {
 }
 function getAccountElement(account) {
     const li = document.createElement("li");
-    li.style = _styleBusiness.getNodeStyle(account);
+    li.style = _styleBusinessDefault.default(account);
     li.append("[Saldo: " + account.money + "] IBAN: " + account.iban);
     return li;
 }
@@ -732,12 +733,11 @@ function getAccountElement(account) {
 },{"./style-business":"2Bo19","@parcel/transformer-js/src/esmodule-helpers.js":"gOImj"}],"2Bo19":[function(require,module,exports) {
 var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
 parcelHelpers.defineInteropFlag(exports);
-parcelHelpers.export(exports, "getNodeStyle", ()=>getNodeStyle
-);
 function getNodeStyle(account) {
     if (account.money < 0) return "color: red";
     return "color: blue";
 }
+exports.default = getNodeStyle;
 
 },{"@parcel/transformer-js/src/esmodule-helpers.js":"gOImj"}]},["b3uC4","lV7TY"], "lV7TY", "parcelRequired300")
 

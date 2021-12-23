@@ -6,4 +6,4 @@ function getNodeStyle(account) {
     return "color: blue";
   }
 
-  export {getNodeStyle}
+  export default getNodeStyle
