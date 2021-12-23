@@ -30,4 +30,4 @@ function getClientElement(client) {
   }
   
 
-  export{getFullName,getClientNode,getClientElement}
+  export{getClientElement}

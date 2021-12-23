@@ -689,10 +689,6 @@ exports.export = function(dest, destName, get) {
 },{}],"26IQs":[function(require,module,exports) {
 var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
 parcelHelpers.defineInteropFlag(exports);
-parcelHelpers.export(exports, "getFullName", ()=>getFullName
-);
-parcelHelpers.export(exports, "getClientNode", ()=>getClientNode
-);
 parcelHelpers.export(exports, "getClientElement", ()=>getClientElement
 );
 var _dataBusinessJs = require("./data-business.js");
@@ -719,8 +715,6 @@ function getFullName(client) {
 var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
 parcelHelpers.defineInteropFlag(exports);
 parcelHelpers.export(exports, "getClientAccountsElement", ()=>getClientAccountsElement
-);
-parcelHelpers.export(exports, "getAccountElement", ()=>getAccountElement
 );
 var _styleBusiness = require("./style-business");
 function getClientAccountsElement(accounts) {
